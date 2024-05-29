@@ -125,7 +125,7 @@
 // //   const makePayment = async () => {
 // //     try {
 // //       const stripe = await loadStripe('pk_test_51PGywdBwqNocB2yIpZysEHjwSRQtGyTy7CT7hALvMgHDH7LvJsNQtupXJlqMi9oSaxWtHpERUxoacfQkEox0jpGI00jFplb4rr'); // Replace with your publishable key
-// //       const response = await fetch('http://localhost:3001/booking/payment', {
+// //       const response = await fetch('https://oasis-4aui.onrender.com/booking/payment', {
 // //         method: 'POST',
 // //         headers: {
 // //           'Content-Type': 'application/json',
@@ -187,7 +187,7 @@
 //   const [clientSecret, setClientSecret] = useState('');
 
 //   useEffect(() => {
-//     fetch('http://localhost:3001/booking/payment', {
+//     fetch('https://oasis-4aui.onrender.com/booking/payment', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',

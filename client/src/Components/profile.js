@@ -7,7 +7,7 @@
 //   const [user, setUser] = useState(null);
 
 //   useEffect(() => {
-//     axios.get(`http://localhost:3001/SignUp/view/${userId}`)
+//     axios.get(`https://oasis-4aui.onrender.com/SignUp/view/${userId}`)
 //       .then(response => {
 //         setUser(response.data);
 //       })
@@ -61,7 +61,7 @@ const Profile = () => {
         const decodedToken = jwtDecode(token);
         const userId = decodedToken.id; // Adjust based on your token's structure
 
-        fetch(`http://localhost:3001/SignUp/view/${userId}`, {
+        fetch(`https://oasis-4aui.onrender.com/SignUp/view/${userId}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }

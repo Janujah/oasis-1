@@ -397,7 +397,7 @@
 
 // // // //         console.log('Form submitted:', formData);
 // // // //         // Assume API exists to handle POST request
-// // // //         fetch('http://localhost:3001/Doctors/create', {
+// // // //         fetch('https://oasis-4aui.onrender.com/Doctors/create', {
 // // // //             method: 'POST',
 // // // //             headers: { 'Content-Type': 'application/json' },
 // // // //             body: JSON.stringify(formData),
@@ -479,7 +479,7 @@
 // // //     const uploadSingleImage = async (base64) => {
 // // //         setLoading(true);
 // // //         try {
-// // //             const response = await fetch("http://localhost:3001/Image/uploadImage", {
+// // //             const response = await fetch("https://oasis-4aui.onrender.com/Image/uploadImage", {
 // // //                 method: "POST",
 // // //                 headers: { "Content-Type": "application/json" },
 // // //                 body: JSON.stringify({ image: base64 }),
@@ -496,7 +496,7 @@
 // // //     const uploadMultipleImages = async (images) => {
 // // //         setLoading(true);
 // // //         try {
-// // //             const response = await fetch("http://localhost:3001/Image//uploadMultipleImages", {
+// // //             const response = await fetch("https://oasis-4aui.onrender.com/Image//uploadMultipleImages", {
 // // //                 method: "POST",
 // // //                 headers: { "Content-Type": "application/json" },
 // // //                 body: JSON.stringify({ images }),
@@ -582,7 +582,7 @@
 //     //             profileImage: profileImageUrl,
 //     //             signatureImage: signatureImageUrl,
 //     //         };
-//     //         const response = await fetch('http://localhost:3001/Doctors/create', {
+//     //         const response = await fetch('https://oasis-4aui.onrender.com/Doctors/create', {
 //     //             method: 'POST',
 //     //             headers: { 'Content-Type': 'application/json' },
 //     //             body: JSON.stringify(dataToSubmit),
@@ -684,7 +684,7 @@
 // //     const uploadSingleImage = async (base64) => {
 // //         setLoading(true);
 // //         try {
-// //             const response = await fetch("http://localhost:3001/Image/uploadImage", {
+// //             const response = await fetch("https://oasis-4aui.onrender.com/Image/uploadImage", {
 // //                 method: "POST",
 // //                 headers: { "Content-Type": "application/json" },
 // //                 body: JSON.stringify({ image: base64 }),
@@ -701,7 +701,7 @@
 // //     const uploadMultipleImages = async (images) => {
 // //         setLoading(true);
 // //         try {
-// //             const response = await fetch("http://localhost:3001/Image/uploadMultipleImages", {
+// //             const response = await fetch("https://oasis-4aui.onrender.com/Image/uploadMultipleImages", {
 // //                 method: "POST",
 // //                 headers: { "Content-Type": "application/json" },
 // //                 body: JSON.stringify({ images }),
@@ -789,7 +789,7 @@
 // //               signatureImage: signatureImageUrl,
 // //           };
 
-// //           const response = await fetch('http://localhost:3001/Doctors/create', {
+// //           const response = await fetch('https://oasis-4aui.onrender.com/Doctors/create', {
 // //               method: 'POST',
 // //               headers: { 'Content-Type': 'application/json' },
 // //               body: JSON.stringify(updatedFormData),
@@ -957,7 +957,7 @@
 // //     const body = { token, booking };
 
 // //     try {
-// //       const response = await fetch('http://localhost:3001/booking/payment', {
+// //       const response = await fetch('https://oasis-4aui.onrender.com/booking/payment', {
 // //         method: 'POST',
 // //         headers: { 'Content-Type': 'application/json' },
 // //         body: JSON.stringify(body),
@@ -970,14 +970,14 @@
 // //           end: new Date(`${formData.preferredDate}T${formData.preferredTime}`),
 // //           title: `Consultation with ${formData.fullName}`
 // //         };
-// //         await fetch('http://localhost:3001/appointments', {
+// //         await fetch('https://oasis-4aui.onrender.com/appointments', {
 // //           method: 'POST',
 // //           headers: { 'Content-Type': 'application/json' },
 // //           body: JSON.stringify(appointment),
 // //         });
 
 // //         // Send email with Zoom link
-// //         await fetch('http://localhost:3001/Email/payment-success', {
+// //         await fetch('https://oasis-4aui.onrender.com/Email/payment-success', {
 // //           method: 'POST',
 // //           headers: { 'Content-Type': 'application/json' },
 // //           body: JSON.stringify({ ...formData, zoomLink: "https://zoom.us/j/your-zoom-link" }),
@@ -997,7 +997,7 @@
 // //     console.log('Form submitted:', formData);
 
 // //     try {
-// //       const response = await fetch('http://localhost:3001/consult/create', {
+// //       const response = await fetch('https://oasis-4aui.onrender.com/consult/create', {
 // //         method: 'POST',
 // //         headers: { 'Content-Type': 'application/json' },
 // //         body: JSON.stringify(formData),
@@ -1294,7 +1294,7 @@
 //                 profileImage: profileImageUrl,
 //             };
 
-//             const response = await fetch('http://localhost:3001/Doctors/create', {
+//             const response = await fetch('https://oasis-4aui.onrender.com/Doctors/create', {
 //                 method: 'POST',
 //                 headers: { 'Content-Type': 'application/json' },
 //                 body: JSON.stringify(formDataWithImage),
@@ -1467,7 +1467,7 @@
 //                 profileImage: profileImageUrl,
 //             };
 
-//             const response = await fetch('http://localhost:3001/Doctors/create', {
+//             const response = await fetch('https://oasis-4aui.onrender.com/Doctors/create', {
 //                 method: 'POST',
 //                 headers: { 'Content-Type': 'application/json' },
 //                 body: JSON.stringify(formDataWithImage),
@@ -1643,7 +1643,7 @@ function ProfilePage({ setUserName }) {
         data.append('availability', JSON.stringify(formData.availability));
 
         try {
-            const response = await fetch('http://localhost:3001/Doctors/create', {
+            const response = await fetch('https://oasis-4aui.onrender.com/Doctors/create', {
                 method: 'POST',
                 body: data,
             });

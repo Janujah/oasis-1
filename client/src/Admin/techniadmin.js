@@ -9,7 +9,7 @@
 
 //     useEffect(() => {
 //         fetchUsers();
-//         const newSocket = new WebSocket('ws://localhost:3001');
+//         const newSocket = new WebSocket('ws://oasis-4aui.onrender.com');
 //         newSocket.onmessage = (event) => {
 //             setUsers(JSON.parse(event.data));
 //         };
@@ -17,7 +17,7 @@
 //     }, []);
 
 //     const fetchUsers = () => {
-//         fetch('http://localhost:3001/Technicians/view')
+//         fetch('https://oasis-4aui.onrender.com/Technicians/view')
 //             .then(response => response.json())
 //             .then(data => setUsers(data))
 //             .catch(error => {
@@ -48,7 +48,7 @@
 //     };
 
 //     const verifyUser = (id) => {
-//         fetch(`http://localhost:3001/Technicians/verify/${id}`, {
+//         fetch(`https://oasis-4aui.onrender.com/Technicians/verify/${id}`, {
 //             method: 'PATCH',
 //             headers: { 'Content-Type': 'application/json' },
 //         })
@@ -70,7 +70,7 @@
 
 //     const deleteUser = (id) => {
 //         if (window.confirm('Are you sure you want to delete this user?')) {
-//             fetch(`http://localhost:3001/Doctors/delete/${id}`, {
+//             fetch(`https://oasis-4aui.onrender.com/Doctors/delete/${id}`, {
 //                 method: 'DELETE',
 //             })
 //                 .then(response => {
@@ -112,7 +112,7 @@
 //             return;
 //         }
 
-//         fetch(`http://localhost:3001/Doctors/update/${editFormData._id}`, {
+//         fetch(`https://oasis-4aui.onrender.com/Doctors/update/${editFormData._id}`, {
 //             method: 'PUT',
 //             headers: {
 //                 'Content-Type': 'application/json',
@@ -208,7 +208,7 @@ const AdminProductTable = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:3001/products/all');
+        const response = await fetch('https://oasis-4aui.onrender.com/products/all');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

@@ -13,7 +13,7 @@ const cors = require('cors');
 
 app.use(
     cors({
-      origin: ["http://localhost:3000","https://psd-1.onrender.com"],
+      origin: ["http://localhost:3000","https://oasis-4aui.onrender.com"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })

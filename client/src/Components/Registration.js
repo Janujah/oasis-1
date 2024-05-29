@@ -24,7 +24,7 @@
 //     };
 //     console.log(userData);
 
-//     fetch('http://localhost:3001/SignUp/create', {
+//     fetch('https://oasis-4aui.onrender.com/SignUp/create', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -187,7 +187,7 @@
 //       confirmPassword
 //     };
 
-//     fetch('http://localhost:3001/SignUp/create', {
+//     fetch('https://oasis-4aui.onrender.com/SignUp/create', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -362,7 +362,7 @@ function SignUpPage() {
         confirmPassword
       };
 
-      fetch('http://localhost:3001/SignUp/create', {
+      fetch('https://oasis-4aui.onrender.com/SignUp/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
