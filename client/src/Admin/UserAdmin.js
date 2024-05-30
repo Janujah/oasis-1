@@ -9,7 +9,7 @@ function UserTable() {
 
     useEffect(() => {
         fetchUsers();
-        const newSocket = new WebSocket('ws://localhost:3001');
+        const newSocket = new WebSocket('ws://oasis-4aui.onrender.com');
         newSocket.onmessage = (event) => {
             setUsers(JSON.parse(event.data));
         };
