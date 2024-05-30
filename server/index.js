@@ -13,7 +13,7 @@ const cors = require('cors');
 
 app.use(
     cors({
-      origin: ["https://f-pro-doc.vercel.app"],
+      origin: ["https://oasis-doctor-consultation.vercel.app/"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })
