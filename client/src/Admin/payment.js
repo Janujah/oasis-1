@@ -9,7 +9,7 @@
 
 // //     useEffect(() => {
 // //         fetchUsers();
-// //         const newSocket = new WebSocket('ws://oasis-4aui.onrender.com');
+// //         const newSocket = new WebSocket('ws://localhost:3001');
 // //         newSocket.onmessage = (event) => {
 // //             setUsers(JSON.parse(event.data));
 // //         };
@@ -17,7 +17,7 @@
 // //     }, []);
 
 // //     const fetchUsers = () => {
-// //         fetch('https://oasis-4aui.onrender.com/Doctors/view')
+// //         fetch('http://localhost:3001/Doctors/view')
 // //             .then(response => response.json())
 // //             .then(data => setUsers(data))
 // //             .catch(error => {
@@ -48,7 +48,7 @@
 // //     };
 
 // //     const verifyUser = (id) => {
-// //         fetch(`https://oasis-4aui.onrender.com/Doctors/verify/${id}`, {
+// //         fetch(`http://localhost:3001/Doctors/verify/${id}`, {
 // //             method: 'PATCH',
 // //             headers: { 'Content-Type': 'application/json' },
 // //         })
@@ -70,7 +70,7 @@
 
 // //     const deleteUser = (id) => {
 // //         if (window.confirm('Are you sure you want to delete this user?')) {
-// //             fetch(`https://oasis-4aui.onrender.com/Doctors/delete/${id}`, {
+// //             fetch(`http://localhost:3001/Doctors/delete/${id}`, {
 // //                 method: 'DELETE',
 // //             })
 // //                 .then(response => {
@@ -112,7 +112,7 @@
 // //             return;
 // //         }
 
-// //         fetch(`https://oasis-4aui.onrender.com/Doctors/update/${editFormData._id}`, {
+// //         fetch(`http://localhost:3001/Doctors/update/${editFormData._id}`, {
 // //             method: 'PUT',
 // //             headers: {
 // //                 'Content-Type': 'application/json',
@@ -207,7 +207,7 @@
 
 //     useEffect(() => {
 //         fetchPayments();
-//         const newSocket = new WebSocket('ws://oasis-4aui.onrender.com');
+//         const newSocket = new WebSocket('ws://localhost:3001');
 //         newSocket.onmessage = (event) => {
 //             setPayments(JSON.parse(event.data));
 //         };
@@ -215,7 +215,7 @@
 //     }, []);
 
 //     const fetchPayments = () => {
-//         fetch('https://oasis-4aui.onrender.com/payments/view')
+//         fetch('http://localhost:3001/payments/view')
 //             .then(response => response.json())
 //             .then(data => setPayments(data))
 //             .catch(error => {
@@ -305,7 +305,7 @@
 //     }, []);
 
 //     const fetchPayments = () => {
-//         fetch('https://oasis-4aui.onrender.com/stripe/payments')
+//         fetch('http://localhost:3001/stripe/payments')
 //             .then(response => response.json())
 //             .then(data => setPayments(data))
 //             .catch(error => {
@@ -402,7 +402,7 @@
 //     const fetchUserDetails = () => {
 //         const token = localStorage.getItem('token'); // Assuming token is stored in local storage
 //         if (token) {
-//             fetch('https://oasis-4aui.onrender.com/user/details', {
+//             fetch('http://localhost:3001/user/details', {
 //                 method: 'GET',
 //                 headers: {
 //                     'Authorization': `Bearer ${token}`,
@@ -422,7 +422,7 @@
 //     };
 
 //     const fetchPayments = () => {
-//         fetch('https://oasis-4aui.onrender.com/stripe/payments')
+//         fetch('http://localhost:3001/stripe/payments')
 //             .then(response => response.json())
 //             .then(data => setPayments(data))
 //             .catch(error => {
@@ -516,7 +516,7 @@ function PaymentTable() {
     const fetchUserDetails = () => {
         const token = localStorage.getItem('token'); // Assuming token is stored in local storage
         if (token) {
-            fetch('https://oasis-4aui.onrender.com/user/details', {
+            fetch('http://localhost:3001/user/details', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -536,7 +536,7 @@ function PaymentTable() {
     };
 
     const fetchPayments = () => {
-        fetch('https://oasis-4aui.onrender.com/stripe/payments')
+        fetch('http://localhost:3001/stripe/payments')
         .then(response => response.json())
         .then(data => {
             console.log('Fetched payments data:', data); // Log the fetched data
@@ -635,7 +635,7 @@ export default PaymentTable;
 //     }, []);
 
 //     const fetchPayments = () => {
-//         fetch('https://oasis-4aui.onrender.com/stripe/payments-with-users')
+//         fetch('http://localhost:3001/stripe/payments-with-users')
 //             .then(response => response.json())
 //             .then(data => setPayments(data))
 //             .catch(error => {

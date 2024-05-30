@@ -113,7 +113,7 @@ function UserTable() {
 
         fetchUsers();
 
-        const newSocket = new WebSocket('ws://oasis-4aui.onrender.com');
+        const newSocket = new WebSocket('ws://localhost:3001');
         newSocket.onmessage = (event) => {
             setUsers(JSON.parse(event.data));
         };
