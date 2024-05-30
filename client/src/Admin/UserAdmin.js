@@ -7,14 +7,14 @@ function UserTable() {
     const [itemsPerPage, setItemsPerPage] = useState(10);
     const [editFormData, setEditFormData] = useState(null);
 
-    // useEffect(() => {
-    //     fetchUsers();
-    //     const newSocket = new WebSocket('ws://oasis-4aui.onrender.com');
-    //     newSocket.onmessage = (event) => {
-    //         setUsers(JSON.parse(event.data));
-    //     };
-    //     return () => newSocket.close();
-    // }, []);
+    useEffect(() => {
+        fetchUsers();
+        const newSocket = new WebSocket('ws://oasis-4aui.onrender.com');
+        newSocket.onmessage = (event) => {
+            setUsers(JSON.parse(event.data));
+        };
+        return () => newSocket.close();
+    }, []);
 
     const fetchUsers = () => {
         fetch('https://oasis-4aui.onrender.com/SignUp/view')
