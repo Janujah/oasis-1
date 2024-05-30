@@ -1,9 +1,7 @@
 // src/App.js
 import React from 'react';
 import ProfileCard from '../Components/ProfileCard';
-// import image2 from '../Img/pexels-thirdman-5327656-removebg-preview.png';
-// import image1 from '../Img/1711468277929-removebg-preview.png'
-// import Nav from '../Components/navbar'
+
 import Navbar from '../Components/navbar';
 import Footer from '../Components/footer' 
 

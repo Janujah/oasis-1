@@ -13,7 +13,7 @@ const cors = require('cors');
 
 app.use(
     cors({
-      origin: ["https://oasis-rqsp.onrender.com/"],
+      origin: ["https://oasis-rqsp.onrender.com"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })
