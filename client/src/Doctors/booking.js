@@ -40,7 +40,7 @@
 //             token
 //         }
 
-//           const response = await fetch('https://oasis-4aui.onrender.com/booking/payment', {
+//           const response = await fetch('https://oasis-r62g.onrender.com/booking/payment', {
 //             method: 'POST',
 //             headers: { 'Content-Type': 'application/json' },
 //             body: JSON.stringify(body),
@@ -126,7 +126,7 @@
 //         //     if (!validateForm()) return;
 
 //         //     console.log('Form submitted:', formData);
-//         //     fetch('https://oasis-4aui.onrender.com/consult/create', {
+//         //     fetch('https://oasis-r62g.onrender.com/consult/create', {
 //         //         method: 'POST',
 //         //         headers: { 'Content-Type': 'application/json' },
 //         //         body: JSON.stringify(formData),
@@ -143,7 +143,7 @@
 // console.log('Form submitted:', formData);
 // const stripe = await stripePromise;
 // try {
-//     const response = await fetch('https://oasis-4aui.onrender.com/consult/create', {
+//     const response = await fetch('https://oasis-r62g.onrender.com/consult/create', {
 //         method: 'POST',
 //         headers: { 'Content-Type': 'application/json' },
 //         body: JSON.stringify(formData),
@@ -418,7 +418,7 @@
 //         const body = { token };
 
 //         try {
-//             const response = await fetch('https://oasis-4aui.onrender.com/booking/payment', {
+//             const response = await fetch('https://oasis-r62g.onrender.com/booking/payment', {
 //                 method: 'POST',
 //                 headers: { 'Content-Type': 'application/json' },
 //                 body: JSON.stringify(body),
@@ -436,7 +436,7 @@
 //         console.log('Form submitted:', formData);
 
 //         try {
-//             const response = await fetch('https://oasis-4aui.onrender.com/consult/create', {
+//             const response = await fetch('https://oasis-r62g.onrender.com/consult/create', {
 //                 method: 'POST',
                 // headers: { 'Content-Type': 'application/json' },
                 // body: JSON.stringify(formData),
@@ -719,7 +719,7 @@ function BookingForm() {
         }
 
         try {
-            const response = await fetch('https://oasis-4aui.onrender.com/consult/create', {
+            const response = await fetch('https://oasis-r62g.onrender.com/consult/create', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
@@ -739,7 +739,7 @@ function BookingForm() {
 
     const handleToken = async (token) => {
         try {
-          const response = await fetch('https://oasis-4aui.onrender.com/booking/payment', {
+          const response = await fetch('https://oasis-r62g.onrender.com/booking/payment', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ token, booking: formData })
@@ -750,7 +750,7 @@ function BookingForm() {
             toast.success('Payment Successful!', { position: 'bottom-right' });
       
             // After successful payment, add the booking to the doctor's dashboard
-            const addToDashboardResponse = await fetch('https://oasis-4aui.onrender.com/booking/payment/success', {
+            const addToDashboardResponse = await fetch('https://oasis-r62g.onrender.com/booking/payment/success', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ bookingId: data.bookingId, doctorId: data.doctorId })
@@ -1057,7 +1057,7 @@ export default BookingForm;
 //     if (validateForm()) {
 //       // Proceed with booking
 //       try {
-//         const response = await fetch('https://oasis-4aui.onrender.com/bookings', {
+//         const response = await fetch('https://oasis-r62g.onrender.com/bookings', {
 //           method: 'POST',
 //           headers: {
 //             'Content-Type': 'application/json',
@@ -1084,7 +1084,7 @@ export default BookingForm;
 
 //   const handleToken = async (token) => {
 //     try {
-//       const response = await fetch('https://oasis-4aui.onrender.com/charge', {
+//       const response = await fetch('https://oasis-r62g.onrender.com/charge', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json'
@@ -1289,7 +1289,7 @@ export default BookingForm;
 
 //   const handleToken = async (token) => {
 //     try {
-//       const response = await fetch('https://oasis-4aui.onrender.com/bookings/payment', {
+//       const response = await fetch('https://oasis-r62g.onrender.com/bookings/payment', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -1316,7 +1316,7 @@ export default BookingForm;
 //       return;
 //     }
 
-//     fetch('https://oasis-4aui.onrender.com/bookings/add', {
+//     fetch('https://oasis-r62g.onrender.com/bookings/add', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',

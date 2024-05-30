@@ -169,7 +169,7 @@ const ProductCard = () => {
 
   const fetchProducts = async (userName) => {
     try {
-      const response = await fetch(`https://oasis-4aui.onrender.com/Products/user/${userName}`);
+      const response = await fetch(`https://oasis-r62g.onrender.com/Products/user/${userName}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

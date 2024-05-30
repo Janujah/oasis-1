@@ -73,7 +73,7 @@ const AppointmentCalendar = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch('https://oasis-4aui.onrender.com/appointments');
+        const response = await fetch('https://oasis-r62g.onrender.com/appointments');
         const data = await response.json();
         setEvents(data);
       } catch (error) {

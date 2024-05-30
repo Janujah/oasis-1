@@ -24,7 +24,7 @@
 //     };
 //     console.log(userData);
 
-//     fetch('https://oasis-4aui.onrender.com/SignUp/create', {
+//     fetch('https://oasis-r62g.onrender.com/SignUp/create', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -187,7 +187,7 @@
 //       confirmPassword
 //     };
 
-//     fetch('https://oasis-4aui.onrender.com/SignUp/create', {
+//     fetch('https://oasis-r62g.onrender.com/SignUp/create', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -362,7 +362,7 @@ function SignUpPage() {
         confirmPassword
       };
 
-      fetch('https://oasis-4aui.onrender.com/SignUp/create', {
+      fetch('https://oasis-r62g.onrender.com/SignUp/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

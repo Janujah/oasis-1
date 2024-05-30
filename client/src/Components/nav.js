@@ -199,7 +199,7 @@ export default Navbar;
 //         setProfile(storedProfile);
 //       } else {
 //         try {
-//           const response = await fetch('https://oasis-4aui.onrender.com/Doctors/profile', { method: 'GET' });
+//           const response = await fetch('https://oasis-r62g.onrender.com/Doctors/profile', { method: 'GET' });
 //           if (response.ok) {
 //             const data = await response.json();
 //             setProfile(data);

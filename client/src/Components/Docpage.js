@@ -7,7 +7,7 @@ function DoctorForm({ doctor, onUpdate }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`https://oasis-4aui.onrender.com/Doctors/view/${doctor._id}`, {
+        fetch(`https://oasis-r62g.onrender.com/Doctors/view/${doctor._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

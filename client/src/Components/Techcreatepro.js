@@ -130,7 +130,7 @@ function ProfilePage() {
         }),
         onSubmit: values => {
             // Post to backend
-            axios.post('https://oasis-4aui.onrender.com/Doctors', {
+            axios.post('https://oasis-r62g.onrender.com/Doctors', {
                 ...values,
                 profileImage,  // Assuming you want to send image URLs which are managed by the state
                 signatureImage

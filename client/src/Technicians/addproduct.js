@@ -5,7 +5,7 @@
 // // const App = () => {
 // //   const handleAddProduct = async (formData) => {
 // //     try {
-// //       const response = await fetch('https://oasis-4aui.onrender.com/Products/add', { // Adjust URL based on your backend route
+// //       const response = await fetch('https://oasis-r62g.onrender.com/Products/add', { // Adjust URL based on your backend route
 // //         method: 'POST',
 // //         body: formData,
 // //       });
@@ -49,7 +49,7 @@
 //       formData.append('price', parseFloat(price));
 //       formData.append('image', image);
 
-//       const response = await fetch('https://oasis-4aui.onrender.com/products/add', {
+//       const response = await fetch('https://oasis-r62g.onrender.com/products/add', {
 //         method: 'POST',
 //         body: formData,
 //       });
@@ -162,7 +162,7 @@ const AddProduct = () => {
       formData.append('userEmail', userEmail);
       formData.append('userName', userName);
 
-      const response = await fetch('https://oasis-4aui.onrender.com/products/add', {
+      const response = await fetch('https://oasis-r62g.onrender.com/products/add', {
         method: 'POST',
         body: formData,
       });

@@ -144,7 +144,7 @@
 //     }, []);
 
 //     const fetchUsers = () => {
-//         fetch('https://oasis-4aui.onrender.com/Doctors/view')
+//         fetch('https://oasis-r62g.onrender.com/Doctors/view')
 //             .then(response => response.json())
 //             .then(data => setUsers(data))
 //             .catch(error => {
@@ -171,7 +171,7 @@
 //             return;
 //         }
 
-//         fetch(`https://oasis-4aui.onrender.com/Doctors/verify/${id}`, {
+//         fetch(`https://oasis-r62g.onrender.com/Doctors/verify/${id}`, {
 //             method: 'PATCH',
 //             headers: { 'Content-Type': 'application/json' },
 //         })
@@ -198,7 +198,7 @@
 //         }
 
 //         if (window.confirm('Are you sure you want to delete this user?')) {
-//             fetch(`https://oasis-4aui.onrender.com/Doctors/delete/${id}`, {
+//             fetch(`https://oasis-r62g.onrender.com/Doctors/delete/${id}`, {
 //                 method: 'DELETE',
 //             })
 //                 .then(response => {
@@ -244,7 +244,7 @@
 //             return;
 //         }
 
-//         fetch(`https://oasis-4aui.onrender.com/Doctors/update/${id}`, {
+//         fetch(`https://oasis-r62g.onrender.com/Doctors/update/${id}`, {
 //             method: 'PUT',
 //             headers: {
 //                 'Content-Type': 'application/json',
@@ -386,7 +386,7 @@ function UserTable() {
 
     useEffect(() => {
         fetchUsers();
-        const newSocket = new WebSocket('ws://oasis-4aui.onrender.com');
+        const newSocket = new WebSocket('ws://oasis-r62g.onrender.com');
         newSocket.onmessage = (event) => {
             setUsers(JSON.parse(event.data));
         };
@@ -394,7 +394,7 @@ function UserTable() {
     }, []);
 
     const fetchUsers = () => {
-        fetch('https://oasis-4aui.onrender.com/Doctors/view')
+        fetch('https://oasis-r62g.onrender.com/Doctors/view')
             .then(response => response.json())
             .then(data => setUsers(data))
             .catch(error => {
@@ -425,7 +425,7 @@ function UserTable() {
     };
 
     const verifyUser = (id) => {
-        fetch(`https://oasis-4aui.onrender.com/Doctors/verify/${id}`, {
+        fetch(`https://oasis-r62g.onrender.com/Doctors/verify/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
         })
@@ -447,7 +447,7 @@ function UserTable() {
 
     const deleteUser = (id) => {
         if (window.confirm('Are you sure you want to delete this user?')) {
-            fetch(`https://oasis-4aui.onrender.com/Doctors/delete/${id}`, {
+            fetch(`https://oasis-r62g.onrender.com/Doctors/delete/${id}`, {
                 method: 'DELETE',
             })
                 .then(response => {
@@ -489,7 +489,7 @@ function UserTable() {
             return;
         }
 
-        fetch(`https://oasis-4aui.onrender.com/Doctors/update/${editFormData._id}`, {
+        fetch(`https://oasis-r62g.onrender.com/Doctors/update/${editFormData._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

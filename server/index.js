@@ -11,21 +11,21 @@ const cors = require('cors');
 //     origin: 'http://localhost:3000'  
 // }));
 
-// app.use(
-//     cors({
-//       origin: ["https://oasis-doctor-consultation.vercel.app/"],
-//       methods: ["GET", "POST", "PUT", "DELETE"],
-//       credentials: true,
-//     })
-//   );
-// app.use(cors());
+app.use(
+    cors({
+      origin: ["https://oasis-doctor-consultation.vercel.app"],
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      credentials: true,
+    })
+  );
+app.use(cors());
 
-const corsOptions = {
-  origin: 'https://oasis-doctor-consultation.vercel.app',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
+// const corsOptions = {
+//   origin: 'https://oasis-doctor-consultation.vercel.app',
+//   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use(express.json());
 connectDb();

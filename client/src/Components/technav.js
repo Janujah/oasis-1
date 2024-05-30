@@ -120,7 +120,7 @@ export default OrthoResourcesNavbar;
 //       } else {
 //         // Optionally, fetch from a backend endpoint
 //         try {
-//           const response = await fetch('https://oasis-4aui.onrender.com/Technicians/profile', { method: 'GET' });
+//           const response = await fetch('https://oasis-r62g.onrender.com/Technicians/profile', { method: 'GET' });
 //           const data = await response.json();
 //           setProfile(data);
 //         } catch (error) {
