@@ -47,26 +47,7 @@ function UserTable() {
         ));
     };
 
-    const verifyUser = (id) => {
-        fetch(`https://oasis-4aui.onrender.com/SignUp/verify/${id}`, {
-            method: 'PATCH',
-            headers: { 'Content-Type': 'application/json' },
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(() => {
-                alert('User verified successfully');
-                fetchUsers();
-            })
-            .catch(error => {
-                console.error('Error verifying user:', error);
-                alert(`Failed to verify the user: ${error.message}`);
-            });
-    };
+
 
     const deleteUser = (id) => {
         if (window.confirm('Are you sure you want to delete this user?')) {
